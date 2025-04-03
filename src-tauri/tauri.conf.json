@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "smcom-apartmant-v2-desktop",
+  "version": "0.1.0",
+  "identifier": "com.smcom-apartmant-v2-desktop.app",
+  "build": {
+    "frontendDist": "../src"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "title": "APARTMANT V2",
+        "width": 430,
+        "height": 932,
+        "minWidth": 320,
+        "minHeight": 694,
+        "maxWidth": 430,
+        "maxHeight": 932,
+        "resizable": true,
+        "fullscreen": false,
+        "center": true,
+        "decorations": true,
+        "transparent": false,
+        "devtools": false,
+        "url": "https://residentapp.apartmant.co.kr/",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self' https://residentapp.apartmant.co.kr http://app.apartmant.kr:* https://app.apartmant.kr:*; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://residentapp.apartmant.co.kr http://app.apartmant.kr:* https://app.apartmant.kr:*; img-src 'self' data: https://residentapp.apartmant.co.kr https://*.apartmant.co.kr http://*.apartmant.kr:* https://*.apartmant.kr:*; connect-src 'self' https://residentapp.apartmant.co.kr https://*.apartmant.co.kr http://*.apartmant.kr:* https://*.apartmant.kr:*"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "msi",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "wix": {
+        "language": "ko-KR"
+      }
+    }
+  }
+}
