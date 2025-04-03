@@ -1,3 +1,2 @@
-# apartmant_v2_pc_wrapper
-
-A new Flutter project.
+# apartmant-v2-residentapp-tauri-wrapper
+ 아파트먼트 V2 윈도우 앱
